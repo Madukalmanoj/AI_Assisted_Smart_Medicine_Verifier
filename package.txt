@@ -1,0 +1,9 @@
+streamlit
+opencv-python
+easyocr
+google-generativeai
+rapidfuzz
+transformers
+torch
+pandas
+pyzbar
