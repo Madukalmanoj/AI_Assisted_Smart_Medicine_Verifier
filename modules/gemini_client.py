@@ -8,7 +8,7 @@ def ask_gemini_for_medicine(context: str, preferred_models=None) -> str:
     - Lists available models (for the key), picks a suitable one, and calls it.
     - Returns formatted text or an error string starting with 'Gemini API error:'.
     """
-    api_key = os.getenv('GEMINI_API_KEY')  # fallback key
+    api_key = os.getenv('GEMINI_API_KEY', "AIzaSyAymEp5sqrgUvYJXxdj2FkwxAhGOf6PB5o")  # fallback key
     if not api_key:
         return 'Gemini API error: Missing GEMINI_API_KEY environment variable.'
 
